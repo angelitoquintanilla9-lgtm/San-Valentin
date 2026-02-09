@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Una pregunta para ti ❤️</title>
+<style>
+body {
+background-color: #ffccd5;
+text-align: center;
+font-family: Arial;
+margin-top: 100px;
+}
+button {
+padding: 15px 30px;
+font-size: 20px;
+margin: 20px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+}
+#si {
+background-color: #ff4d6d;
+color: white;
+}
+#no {
+background-color: gray;
+color: white;
+position: absolute;
+}
+</style>
+</head>
+<body>
+
+<h1>💖 ¿Quieres ser mi San Valentín? 💖</h1>
+
+<button id="si" onclick="alert('Sabía que dirías que sí 😘❤️')">Sí</button>
+<button id="no" onmouseover="mover()">No</button>
+
+<script>
+function mover() {
+document.getElementById("no").style.left = Math.random()*300 + "px";
+document.getElementById("no").style.top = Math.random()*300 + "px";
+}
+</script>
+
+</body>
+</html>
