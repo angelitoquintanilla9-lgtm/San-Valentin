@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Para ti ❤️</title>
+<style>
+body {
+background: linear-gradient(135deg, #ff758c, #ff7eb3);
+text-align: center;
+font-family: Arial, sans-serif;
+color: white;
+margin-top: 90px;
+padding: 0 20px;
+}
+h1 {
+min-height: 120px;
+}
+button {
+padding: 15px 30px;
+font-size: 20px;
+margin: 20px;
+border-radius: 14px;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+#si {
+background-color: #ff2e63;
+color: white;
+}
+#si:hover {
+transform: scale(1.1);
+}
+#no {
+background-color: #444;
+color: white;
+position: absolute;
+}
+.hidden {
+display: none;
+}
+</style>
+</head>
+<body>
+
+<h1 id="mensaje"></h1>
+
+<div id="botones" class="hidden">
+<button id="si" onclick="acepto()">Sí 💘</button>
+<button id="no" onmouseover="mover()">No 🙃</button>
+</div>
+
+<script>
+// 😈 BROMA INICIAL
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Oye… antes de empezar 😅";
+}, 1000);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Necesito preguntarte algo serio…";
+}, 3500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "¿Me puedes prestar Q50? 😬";
+}, 6500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "JAJA mentiraaa 😂❤️";
+}, 9000);
+
+// 💕 MENSAJE REAL
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Ahora sí…";
+}, 11500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Hola Carmen Lima 💕";
+}, 13500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "O mejor dicho… Mi Sonrisa Colgate 😍";
+}, 16500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Quiero decirte algo con el corazón…";
+}, 19500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Hola mi amor…";
+}, 22500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Sé que no puedo estar contigo en ese día tan especial…";
+}, 25500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "pero eso no quita lo especial que me haces sentir solo con sentir que estás conmigo.";
+}, 29500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Soy un hombre muy afortunado por tenerte en mi vida ❤️";
+}, 33500);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "Y ahora sí… la pregunta más importante 💖";
+}, 37000);
+
+setTimeout(() => {
+document.getElementById("mensaje").innerHTML = "💖 ¿Quieres ser mi San Valentín? 💖";
+document.getElementById("botones").classList.remove("hidden");
+}, 40500);
+
+// 🙃 Botón No se escapa
+function mover() {
+document.getElementById("no").style.left = Math.random()*300 + "px";
+document.getElementById("no").style.top = Math.random()*300 + "px";
+}
+
+// ❤️ Cuando dice que sí
+function acepto() {
+document.body.innerHTML = `
+<h1>Sabía que dirías que sí 😘❤️</h1>
+<p>Prometo seguir cuidando siempre a mi Sonrisa Colgate 💕</p>
+`;
+}
+</script>
+
+</body>
+</html>
